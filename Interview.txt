@@ -2,6 +2,8 @@ questions:
   - "Can you introduce yourself?"
   - "How did you join your college?"
   - "Can you provide me with the code you wrote in Coding Round 2?"
+  - "What is your approach to solve this?"
+  - "Tell me how did you think for base case and optimize?"
   - "What is Array and ArrayList?"
   - "What is Hashing?"
   - "Which role would you like to work in?"
