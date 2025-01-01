@@ -1,0 +1,91 @@
+Problem Statement:
+
+Title: Largest Palindromic Number
+
+Description: 
+Given a string `str` consisting of digits ('0' to '9'), write a program to find the largest palindromic number that can be formed using the digits of the string. A palindromic number is a number that reads the same forward and backward.
+
+If no valid palindromic number can be formed (other than "0"), the program should return "0".
+
+The function should use the digits optimally to construct the largest palindromic number, considering the following rules:
+1. Digits can appear at most as many times as they are present in the input string.
+2. If a single-digit center is required, it should be the largest possible digit.
+
+Input Format:
+- A single string, `str`, containing only digits ('0' to '9').
+
+Output Format:
+- A single string representing the largest palindromic number that can be formed.
+---
+
+Test Cases and Explanations:
+
+Test Case 1:
+Input:
+1919
+Output:
+9119
+Explanation:
+- All digits appear twice that they can be symmetrically placed, forming "9119".
+
+---
+
+Test Case 2:
+Input:
+000011
+Output:
+100001
+Explanation:
+- The digits '1' appear twice, and '0' appears four times.
+- We can form the largest palindrome by placing the '1' in the center and the '0's symmetrically around it.
+- The largest palindromic number formed is "100001".
+- Leading zeros are avoided unless the entire palindrome is "0".
+
+---
+
+Test Case 3:
+Input:
+12345
+Output:
+5
+Explanation:
+- None of the digits appear more than once.
+- The largest single-digit (5) is chosen as the palindrome center.
+
+---
+
+Test Case 4:
+Input:
+000000
+Output:
+0
+Explanation:
+- All digits are zeros. 
+- The largest valid palindromic number is "0".
+
+---
+
+Test Case 5:
+Input:
+543215432
+Output:
+543212345
+Explanation:
+- Digits appear in such a way that they can be symmetrically placed, forming "543212345".
+- The largest possible palindromic number is created.
+
+---
+
+Test Case 6:
+Input:
+9
+Output:
+9
+Explanation:
+- Only one digit (9) is present. 
+- It itself forms the largest palindromic number.
+
+Constraints:
+1<=n<=10^5.
+0<=s[i]<=9.
+A string containing only digits ('0' to '9').

@@ -1,0 +1,10 @@
+questions:
+  - "Can you introduce yourself?"
+  - "How did you join your college?"
+  - "Can you provide me with the code you wrote in Coding Round 2?"
+  - "What is Array and ArrayList?"
+  - "What is Hashing?"
+  - "Which role would you like to work in?"
+  - "Where are you from?"
+  - "What is your rank in college?"
+  - "Do you have any questions for me?"

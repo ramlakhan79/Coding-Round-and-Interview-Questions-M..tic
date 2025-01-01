@@ -1,0 +1,115 @@
+Problem Statement:
+
+Title: String Pair Matching Based on Unique Character Counts
+
+Description:
+Write a program to determine if two strings are "Paired" based on the number
+of unique characters in each string. Two strings are considered "Paired" if:
+
+- Both strings have the same length.
+- The count of unique characters (case-insensitive) in both strings is equal.
+- The program should ignore case differences while counting unique characters.
+  For example, 'A' and 'a' should be treated as the same character.
+
+If the strings satisfy the above conditions, the output should be "Paired",
+otherwise, it should be "Not Paired".
+
+Input Format:
+- The first line contains a string, `str1`, consisting of uppercase and/or
+  lowercase English alphabets.
+- The second line contains a string, `str2`, consisting of uppercase and/or
+  lowercase English alphabets.
+
+Output Format:
+- Print "Paired" if the strings meet the criteria.
+- Print "Not Paired" otherwise.
+
+---
+
+Test Cases and Explanations:
+
+Test Case 1:
+Input:
+CAT
+DOG
+Output:
+Paired
+Explanation:
+- Both strings have a length of 3.
+- str1 = "CAT" contains the unique characters {C, A, T}, so the count is 3.
+- str2 = "DOG" contains the unique characters {D, O, G}, so the count is 3.
+- Since the lengths match and the unique character counts are equal, the strings are "Paired".
+
+---
+
+Test Case 2:
+Input:
+Book
+Look
+Output:
+Paired
+Explanation:
+- Both strings have a length of 4.
+- The unique characters in str1 = "Book" are {B, O, K} (case-insensitive), count = 3.
+- The unique characters in str2 = "Look" are {L, O, K} (case-insensitive), count = 3.
+- Since the lengths and unique character counts match, the strings are "Paired".
+
+---
+
+Test Case 3:
+Input:
+abc
+abcd
+Output:
+Not Paired
+Explanation:
+- str1 = "abc" has a length of 3.
+- str2 = "abcd" has a length of 4.
+- The lengths are not equal, so the strings cannot be "Paired".
+
+---
+
+Test Case 4:
+Input:
+abc
+cda
+Output:
+Paired
+Explanation:
+- Both strings have a length of 3.
+- The unique characters in str1 = "abc" are {a, b, c}, count = 3.
+- The unique characters in str2 = "cda" are {c, d, a}, count = 3.
+- The lengths and unique character counts match, so the strings are "Paired".
+
+---
+
+Test Case 5:
+Input:
+aab
+ccc
+Output:
+Not Paired
+Explanation:
+- Both strings have a length of 3.
+- The unique characters in str1 = "aab" are {a, b}, count = 2.
+- The unique characters in str2 = "ccc" are {c}, count = 1.
+- The unique character counts do not match, so the strings are "Not Paired".
+
+---
+
+Test Case 6:
+Input:
+abc
+Output:
+Not Paired
+Explanation:
+- str1 = "abc" has a length of 3.
+- str2 = "" (empty string) has a length of 0.
+- The lengths are not equal, so the strings are "Not Paired".
+
+---
+
+Constraints:
+- 0 <= str1.length(), str2.length() <= 10^5
+- The strings may contain a mix of uppercase and lowercase letters.
+- The input strings will contain only English alphabets.
